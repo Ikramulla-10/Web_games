@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background: #1FA2FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+input{
+    height: 3rem;
+    margin-right: 1rem;
+    width: 10rem;
+    border-radius: 12px;
+    padding-left: 1rem;
+    border: 2px solid black;
+    background: rgb(183, 255, 209);color: white;
+}
+
+#gameScreen {
+  margin-top: 20px;
+}
+.start-button {
+  background: linear-gradient(135deg, #4CAF50, #45A049);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start-button:hover {
+  background: linear-gradient(135deg, #45A049, #3e8e41);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.start-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tile {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  background: #f0f0f0;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #999;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.tile:hover {
+  background: #ddd;
+}
+
+.empty {
+  background: #ccc;
+  cursor: default;
+}
